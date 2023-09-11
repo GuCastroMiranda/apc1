@@ -5,5 +5,7 @@ int raio = 10;
   float pi = 3.1416;
  float perimetro = 2*raio*pi;
   printf("O perimetro da pizza é %f\n", perimetro);
+
+  
   return 0;
 }

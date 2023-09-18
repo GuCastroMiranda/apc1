@@ -3,11 +3,21 @@
 #include <math.h>
 int main() {
 
-double distancia = 100;
-double seno45 = 3.14159265 / 180;
-double altura = sin(seno45) * distancia;
+  // Qual o valor do angulo? //
+  int angulo = 7;
 
-printf("a altura alcançada foi %d\n", altura);
+  // Qual o valor do seno do angulo ? Parte necessária pois a funçao de seno de math.h é em radianos //
+  double angulo_radianos = (angulo * M_PI) / 180;
+
+  //Seno do angulo em radianos //
+  double seno = sin(angulo_radianos);
+
+  //Calculo da altura //
+  double distancia = 100;
+  
+  double altura = seno * distancia;
+
+  printf("a altura alcançada foi %lf metros \n", altura);
 
   
   return 0;

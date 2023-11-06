@@ -7,13 +7,14 @@ int escolha = 0;
 do {  
  printf("🐍 Bem vindo ao jogo da cobrinha!🐍");
  printf("Selecione a opção desejada: ");
- printf("1- Iniciar Jogo!");
- printf("2- Sair.");
+ printf("1- Iniciar Jogo!  ");
+ printf("2- Sair.  ");
  scanf("%d", &escolha);
-switch(escolha);{
+  
+switch(escolha) {
   case 1: printf("Iniciando o jogo da cobrinha..."); break;
   case 2: printf("Saindo do jogo da cobrinha, volte logo!"); break;
-  default: printf("Opção inválida, digite 1 para iniciar e 2 para sair!");
+  default: printf("Opção inválida, digite 1 para iniciar e 2 para sair!"); break;
     }
 }  while (escolha != 2);
    
